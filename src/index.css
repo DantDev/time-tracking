@@ -366,3 +366,70 @@ span{
   font-weight: 300;
   color: var(--clr-pale-blue);
 }
+
+@media(max-width: 1100px){
+  .container{
+    display: flex;
+    flex-direction: column;   
+  }
+
+  .user-card{
+    width: 340px;
+    min-height: 0;
+  }
+
+  .user-data{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .user-img{
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  .user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .user-title{
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  span{
+    display: inline;
+  }
+
+  .period-btns{
+    display: flex;
+  }
+
+  .work-card{
+    width: 340px;
+    height: 180px;
+  }
+
+  .card-options{
+    margin-bottom: 5px;
+  }
+
+  .work-title{
+    font-size: 1.2em;
+  }
+
+  .time-info{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-hours{
+    font-size: 2.5em;
+  }
+
+  .work-past{
+    margin-top: 10px;
+  }
+}
