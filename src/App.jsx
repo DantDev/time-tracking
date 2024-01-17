@@ -37,12 +37,16 @@ function displayMonth() {
       <div className="user-card">
         <div className="user-data">
           <img className="user-img" src={profilePic}/>
-          <p className="user-sub-title">Report for</p>
-          <h1 className="user-title"><span>Jeremy</span> Robson</h1>
+          <div className="user-info">
+            <p className="user-sub-title">Report for</p>
+            <h1 className="user-title"><span>Jeremy</span> Robson</h1>
+          </div>
         </div>
-        <h2 onClick={displayDay} className={showDay ? "day-active" :"stats-period"}>Daily</h2>
-        <h2 onClick={displayWeek} className={showWeek ? "week-active" :"stats-period"}>Weekly</h2>
-        <h2 onClick={displayMonth} className={showMonth ? "month-active" :"stats-period"}>Montly</h2>
+        <div className="period-btns">
+          <h2 onClick={displayDay} className={showDay ? "day-active" :"stats-period"}>Daily</h2>
+          <h2 onClick={displayWeek} className={showWeek ? "week-active" :"stats-period"}>Weekly</h2>
+          <h2 onClick={displayMonth} className={showMonth ? "month-active" :"stats-period"}>Montly</h2>
+        </div>
       </div>
       <div className="work-card">
         <div className="bg-container">
@@ -53,8 +57,10 @@ function displayMonth() {
             <p className="work-title">{data[0].title}</p>
             <p className="work-menu">...</p>
           </div>
-          <h1 className="work-hours">{showDay ? data[0].timeframes.daily.current : ( showWeek ? data[0].timeframes.weekly.current : ( showMonth ? data[0].timeframes.monthly.current : "" )) }hrs</h1>
-          <p className="work-past">Last Week - {showDay ? data[0].timeframes.daily.previous : ( showWeek ? data[0].timeframes.weekly.previous : ( showMonth ? data[0].timeframes.monthly.previous : "" )) }hrs</p>
+          <div className="time-info">
+            <h1 className="work-hours">{showDay ? data[0].timeframes.daily.current : ( showWeek ? data[0].timeframes.weekly.current : ( showMonth ? data[0].timeframes.monthly.current : "" )) }hrs</h1>
+            <p className="work-past">Last Week - {showDay ? data[0].timeframes.daily.previous : ( showWeek ? data[0].timeframes.weekly.previous : ( showMonth ? data[0].timeframes.monthly.previous : "" )) }hrs</p>
+          </div>
         </div>
       </div>
       <div className="play-card">
@@ -66,8 +72,10 @@ function displayMonth() {
             <p className="play-title">{data[1].title}</p>
             <p className="play-menu">...</p>
           </div>
-          <h1 className="play-hours">{showDay ? data[1].timeframes.daily.current : ( showWeek ? data[1].timeframes.weekly.current : ( showMonth ? data[1].timeframes.monthly.current : "" )) }hrs</h1>
-          <p className="play-past">Last Week - {showDay ? data[1].timeframes.daily.previous : ( showWeek ? data[1].timeframes.weekly.previous : ( showMonth ? data[1].timeframes.monthly.previous : "" )) }hrs</p>
+          <div className="time-info">
+            <h1 className="play-hours">{showDay ? data[1].timeframes.daily.current : ( showWeek ? data[1].timeframes.weekly.current : ( showMonth ? data[1].timeframes.monthly.current : "" )) }hrs</h1>
+            <p className="play-past">Last Week - {showDay ? data[1].timeframes.daily.previous : ( showWeek ? data[1].timeframes.weekly.previous : ( showMonth ? data[1].timeframes.monthly.previous : "" )) }hrs</p>
+          </div>
         </div>
       </div>
       <div className="study-card">
@@ -79,8 +87,10 @@ function displayMonth() {
             <p className="study-title">{data[2].title}</p>
             <p className="study-menu">...</p>
           </div>
-          <h1 className="study-hours">{showDay ? data[2].timeframes.daily.current : ( showWeek ? data[2].timeframes.weekly.current : ( showMonth ? data[2].timeframes.monthly.current : "" )) }hrs</h1>
-          <p className="study-past">Last Week - {showDay ? data[2].timeframes.daily.previous : ( showWeek ? data[2].timeframes.weekly.previous : ( showMonth ? data[2].timeframes.monthly.previous : "" )) }hrs</p>
+          <div className="time-info">
+            <h1 className="study-hours">{showDay ? data[2].timeframes.daily.current : ( showWeek ? data[2].timeframes.weekly.current : ( showMonth ? data[2].timeframes.monthly.current : "" )) }hrs</h1>
+            <p className="study-past">Last Week - {showDay ? data[2].timeframes.daily.previous : ( showWeek ? data[2].timeframes.weekly.previous : ( showMonth ? data[2].timeframes.monthly.previous : "" )) }hrs</p>
+          </div>
         </div>
       </div><div className="exercise-card">
         <div className="bg-container">
@@ -91,8 +101,10 @@ function displayMonth() {
             <p className="exercise-title">{data[3].title}</p>
             <p className="exercise-menu">...</p>
           </div>
-          <h1 className="exercise-hours">{showDay ? data[3].timeframes.daily.current : ( showWeek ? data[3].timeframes.weekly.current : ( showMonth ? data[3].timeframes.monthly.current : "" )) }hrs</h1>
-          <p className="exercise-past">Last Week - {showDay ? data[3].timeframes.daily.previous : ( showWeek ? data[3].timeframes.weekly.previous : ( showMonth ? data[3].timeframes.monthly.previous : "" )) }hrs</p>
+          <div className="time-info">
+            <h1 className="exercise-hours">{showDay ? data[3].timeframes.daily.current : ( showWeek ? data[3].timeframes.weekly.current : ( showMonth ? data[3].timeframes.monthly.current : "" )) }hrs</h1>
+            <p className="exercise-past">Last Week - {showDay ? data[3].timeframes.daily.previous : ( showWeek ? data[3].timeframes.weekly.previous : ( showMonth ? data[3].timeframes.monthly.previous : "" )) }hrs</p>
+          </div>
         </div>
       </div>
       <div className="social-card">
@@ -104,8 +116,10 @@ function displayMonth() {
             <p className="social-title">{data[4].title}</p>
             <p className="social-menu">...</p>
           </div>
-          <h1 className="social-hours">{showDay ? data[4].timeframes.daily.current : ( showWeek ? data[4].timeframes.weekly.current : ( showMonth ? data[4].timeframes.monthly.current : "" )) }hrs</h1>
-          <p className="social-past">Last Week - {showDay ? data[4].timeframes.daily.previous : ( showWeek ? data[4].timeframes.weekly.previous : ( showMonth ? data[4].timeframes.monthly.previous : "" )) }hrs</p>
+          <div className="time-info">
+            <h1 className="social-hours">{showDay ? data[4].timeframes.daily.current : ( showWeek ? data[4].timeframes.weekly.current : ( showMonth ? data[4].timeframes.monthly.current : "" )) }hrs</h1>
+            <p className="social-past">Last Week - {showDay ? data[4].timeframes.daily.previous : ( showWeek ? data[4].timeframes.weekly.previous : ( showMonth ? data[4].timeframes.monthly.previous : "" )) }hrs</p>
+          </div>
         </div>
       </div>
       <div className="selfcare-card">
@@ -117,8 +131,10 @@ function displayMonth() {
             <p className="selfcare-title">{data[5].title}</p>
             <p className="selfcare-menu">...</p>
           </div>
-          <h1 className="selfcare-hours">{showDay ? data[5].timeframes.daily.current : ( showWeek ? data[5].timeframes.weekly.current : ( showMonth ? data[5].timeframes.monthly.current : "" )) }hrs</h1>
-          <p className="selfcare-past">Last Week - {showDay ? data[5].timeframes.daily.previous : ( showWeek ? data[5].timeframes.weekly.previous : ( showMonth ? data[5].timeframes.monthly.previous : "" )) }hrs</p>
+          <div className="time-info">
+            <h1 className="selfcare-hours">{showDay ? data[5].timeframes.daily.current : ( showWeek ? data[5].timeframes.weekly.current : ( showMonth ? data[5].timeframes.monthly.current : "" )) }hrs</h1>
+            <p className="selfcare-past">Last Week - {showDay ? data[5].timeframes.daily.previous : ( showWeek ? data[5].timeframes.weekly.previous : ( showMonth ? data[5].timeframes.monthly.previous : "" )) }hrs</p>
+          </div>
         </div>
       </div>
     </div>
