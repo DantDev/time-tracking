@@ -407,9 +407,16 @@ span{
     display: flex;
   }
 
+  /*Work Card*/
+
   .work-card{
     width: 340px;
     height: 180px;
+  }
+
+  .work-icon{
+    left: 240px;
+    width: 25%;
   }
 
   .card-options{
@@ -430,6 +437,128 @@ span{
   }
 
   .work-past{
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+
+  /*Play Card*/
+
+  .play-card{
+    width: 340px;
+    height: 180px;
+  }
+
+  .play-icon{
+    left: 240px;
+    width: 25%;
+  }
+
+  .play-title{
+    font-size: 1.2em;
+  }
+
+  .play-hours{
+    font-size: 2.5em;
+  }
+
+  .play-past{
+    margin-top: 20px;
+  }
+
+  /*Study Card*/
+
+  .study-card{
+    width: 340px;
+    height: 180px;
+  }
+
+  .study-icon{
+    left: 240px;
+    width: 25%;
+  }
+
+  .study-title{
+    font-size: 1.2em;
+  }
+
+  .study-hours{
+    font-size: 2.5em;
+  }
+
+  .study-past{
+    margin-top: 20px;
+  }
+
+  /*Exercise Card*/
+
+  .exercise-card{
+    width: 340px;
+    height: 180px;
+  }
+
+  .exercise-icon{
+    left: 240px;
+    width: 25%;
+  }
+
+  .exercise-title{
+    font-size: 1.2em;
+  }
+
+  .exercise-hours{
+    font-size: 2.5em;
+  }
+
+  .exercise-past{
+    margin-top: 20px;
+  }
+
+    /*Social Card*/
+
+  .social-card{
+    width: 340px;
+    height: 180px;
+  }
+
+  .social-icon{
+    left: 240px;
+    width: 25%;
+  }
+
+  .social-title{
+    font-size: 1.2em;
+  }
+
+  .social-hours{
+    font-size: 2.5em;
+  }
+
+  .social-past{
+    margin-top: 20px;
+  }
+
+  /*Work Card*/
+
+  .selfcare-card{
+    width: 340px;
+    height: 180px;
+    margin-bottom: 50px;
+  }
+
+  .selfcare-icon{
+    left: 255px;
+    top: -5px;
+    width: 20%;
+  }
+
+  .selfcare-title{
+    font-size: 1.2em;
+  }
+
+  .selfcare-hours{
+    font-size: 2.5em;
+  }
+
+  .selfcare-past{
+    margin-top: 20px;
   }
 }
