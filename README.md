@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/time-tracking-dashboardreact-vite-json-data-responsive-grid-ZZ43rUrlnD)
 - Live Site URL: [Live site URL](https://regal-puppy-d43b79.netlify.app/)
 - Repository: [Repository](https://github.com/DantDev/time-tracking)
 
