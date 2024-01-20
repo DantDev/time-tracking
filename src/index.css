@@ -32,6 +32,8 @@ body{
   display: flex;
   justify-content: center;
   background: var(--clr-very-dark-blue);
+  min-height: 100vh;
+  align-items: center;
 }
 
 span{
@@ -45,7 +47,6 @@ span{
   "a b c d"
   "a e f g";
   gap: 30px;
-  padding-top: 40px;
 }
 
 .user-card{
@@ -246,7 +247,6 @@ span{
   font-weight: 300;
   color: var(--clr-pale-blue);
 }
-
 
 .exercise-card{
   background: var(--clr-lime-green);
@@ -536,7 +536,7 @@ span{
     margin-top: 20px;
   }
 
-  /*Work Card*/
+  /*Self Care Card*/
 
   .selfcare-card{
     width: 340px;
